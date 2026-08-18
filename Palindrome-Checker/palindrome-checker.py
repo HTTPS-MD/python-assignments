@@ -1,4 +1,14 @@
-def is_palindrome(word: str) -> bool:
+def is_palindrome(word : str) -> bool:
+
+    list_num = []
+
+    for character in word.lower():
+        list_num.insert(0, character)
+
+    return "".join(list_num) == word.lower()
+
+
+def is_palindrome_v2(word: str) -> bool:
 
     clean_sentence = "".join([char for char in word if char.isalpha()]).lower()
 
@@ -7,5 +17,6 @@ def is_palindrome(word: str) -> bool:
 
 if __name__ == "__main__":
 
-    word = input("Enter a word or sentence: ")
-    print(is_palindrome(word))
+    print(is_palindrome_v2("Racecar")) # True
+    print(is_palindrome("Python")) # False
+
