@@ -10,8 +10,31 @@ def frequency_sort(word: str) -> str:
 
     return "".join(char * webster[char] for char in sorted_chars)
 
+
+
+
+
+from collections import Counter
+def frequency_sort_v2(word: str) -> str:
+    dictionary = Counter(word)
+    list_char = sorted(dictionary.items(), key=lambda x : x[1], reverse=True)
+    final_str = []
+
+    for character, count in list_char:
+        final_str.append(character * count)
+
+
+    return "".join(final_str)
+
+
+def frequency_sort_v3(word: str) -> str:
+
+    return "".join(char * count for char, count in Counter(word).most_common())
+
 if __name__ == "__main__":
 
     print(frequency_sort("tree"))
-    print(frequency_sort("cccaaa"))
-    print(frequency_sort("Aabb"))
+    print(frequency_sort_v2("cccaaa"))
+    print(frequency_sort_v3("Aabb"))
+
+
