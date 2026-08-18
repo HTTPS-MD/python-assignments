@@ -1,4 +1,14 @@
-def first_non_repeating_character(text : str) -> str :
+from collections import Counter
+def first_non_repeating_character(word: str) -> str:
+    dictionary = Counter(word)
+
+    for key, value in dictionary.items():
+        if value == 1:
+            return key
+
+    return ""
+
+def first_non_repeating_character_v2(text : str) -> str:
     dictionary = {}
 
     for character in text:
@@ -10,7 +20,10 @@ def first_non_repeating_character(text : str) -> str :
 
     return ""
 
-if __name__ == "__main__":
-    word = input("Enter a word: ")
 
-    print(first_non_repeating_character(word))
+
+if __name__ == "__main__":
+
+    print(first_non_repeating_character("swiss")) # Expected: "w"
+    print(first_non_repeating_character_v2("programming")) # Expected: "p"
+    print(first_non_repeating_character_v2("prropo")) # Expected: Empty String
