@@ -1,4 +1,5 @@
-def first_uniq_char_index(word : str) -> int:
+from collections import Counter
+def first_uniq_char_index_v1(word : str) -> int:
 
     dictionary = {}
 
@@ -10,9 +11,19 @@ def first_uniq_char_index(word : str) -> int:
             return index
 
     return -1
+
+
+def first_uniq_char_index_v2(text : str) -> int:
+    counts = Counter(text)
+
+    for index, character in enumerate(text):
+        if counts[character] == 1:
+            return index
+
+    return -1
+
 if __name__ == "__main__":
 
     text = input("Enter a word: ")
-    print(first_uniq_char_index(text))
-
-
+    print(first_uniq_char_index_v1(text))
+    print(first_uniq_char_index_v2(text))
