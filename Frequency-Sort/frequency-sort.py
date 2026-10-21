@@ -12,8 +12,6 @@ def frequency_sort(word: str) -> str:
 
 
 
-
-
 from collections import Counter
 def frequency_sort_v2(word: str) -> str:
     dictionary = Counter(word)

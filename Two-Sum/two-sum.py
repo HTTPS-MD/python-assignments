@@ -2,7 +2,7 @@ def two_sums(numbers: list[int], target: int) -> list[int]:
     dictionary = {}
 
     for index, value in enumerate(numbers):
-        complement = target - value
+        complement = target - value #4 2 7
 
         if complement in dictionary:
             return [dictionary[complement], index]

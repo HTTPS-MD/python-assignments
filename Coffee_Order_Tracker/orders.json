@@ -6,5 +6,13 @@
     {
         "name": "Daniel",
         "coffee": "Chocolate Drink"
+    },
+    {
+        "name": "Rowena",
+        "coffee": "Caramel Macchiato"
+    },
+    {
+        "name": "Mocha",
+        "coffee": "Edwin"
     }
 ]
