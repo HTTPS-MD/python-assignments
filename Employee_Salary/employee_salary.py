@@ -1,21 +1,27 @@
-def employee_salary(hworked : int, hrate : int) -> int:
+def employee_salary(hworked: float, hrate: float) -> str:
+    overtime = 0.0
 
-    regularPay = hrate * hworked
+    if hworked > 40:
+        overtime = (hworked - 40) * 1.5 * hrate
+        regular_pay = 40 * hrate
+    else:
+        regular_pay = hworked * hrate
 
-    if (hworked > 40):
-        overtime = ((hworked - 40) * 1.5) * hrate
-        regularPay = (hworked - (hworked - 40)) * hrate
+    gross_salary = regular_pay + overtime
+    deduction = gross_salary * 0.05
+    net_salary = gross_salary - deduction
 
-    grossSalary = regularPay + overtime
-    deduction = grossSalary * 0.05
-    netSalary = grossSalary - deduction
-
-    return f"\nREGULAR PAY: P{regularPay}\nOVERTIME PAY: P{overtime}\nGROSS SALARY: P{grossSalary}\nDEDUCTION (5%): P{deduction}\nNET SALARY: P{netSalary}"
-
+    return (
+        f"\nREGULAR PAY: P{regular_pay:,.2f}"
+        f"\nOVERTIME PAY: P{overtime:,.2f}"
+        f"\nGROSS SALARY: P{gross_salary:,.2f}"
+        f"\nDEDUCTION (5%): P{deduction:,.2f}"
+        f"\nNET SALARY: P{net_salary:,.2f}"
+    )
 
 
 if __name__ == "__main__":
-    hoursWorked = int(input("Hours Worked: "))
-    hourlyRate = int(input("Hourly Rate: "))
+    hours_worked = float(input("Hours Worked: "))
+    hourly_rate = float(input("Hourly Rate: "))
 
-    print(employee_salary(hoursWorked, hourlyRate))
+    print(employee_salary(hours_worked, hourly_rate))

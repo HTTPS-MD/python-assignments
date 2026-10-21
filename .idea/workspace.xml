@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92f0e4b2-3738-405e-b279-5127b675a4e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Employee_Salary/employee_salary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/numerical_analysis_grade_checker/numerical_analysis_grade_checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coffee_Order_Tracker/orders.json" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee_Order_Tracker/orders.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Find-All-Duplicates/find-all-duplicates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Find-All-Duplicates/find-all-duplicates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frequency-Sort/frequency-sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frequency-Sort/frequency-sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobile_Legends_Build_Saver/builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mobile_Legends_Build_Saver/builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Most-Frequent-Character/most-frequent-character.py" beforeDir="false" afterPath="$PROJECT_DIR$/Most-Frequent-Character/most-frequent-character.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two-Sum/two-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Two-Sum/two-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unique-Word-Counter-and-Frequency/unique-word-counter-and-frequency.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unique-Word-Counter-and-Frequency/unique-word-counter-and-frequency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Valid-Parentheses/valid-parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/Valid-Parentheses/valid-parentheses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try.py" beforeDir="false" afterPath="$PROJECT_DIR$/try.py" afterDir="false" />
-    </list>
+    <list default="true" id="92f0e4b2-3738-405e-b279-5127b675a4e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +17,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/HTTPS-MD/python-assignments.git",
+    "accountId": "468b1fcf-3803-4859-863c-8af6a430487e"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3,
   &quot;fromUser&quot;: false
