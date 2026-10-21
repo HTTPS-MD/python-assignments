@@ -1,4 +1,3 @@
-import math
 def employee_salary(hworked : int, hrate : int) -> int:
 
     regularPay = hrate * hworked
